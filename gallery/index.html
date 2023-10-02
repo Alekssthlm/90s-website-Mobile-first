@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/gallery/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Share+Tech&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap"
+      rel="stylesheet"
+    />
+    <title>Discman - Gallery</title>
+  </head>
+
+  <body>
+    <!-- color palette https://colorhunt.co/palette/f9e2af009fbd21006277037b -->
+    <div class="wrap">
+      <nav>
+        <div class="logo">
+          <!-- Secret music player -->
+          <ul>
+            <li class="logo__image">
+              <input type="checkbox" id="activate-player" />
+              <label for="activate-player"
+                ><img
+                  src="https://bestanimations.com/media/discs/1070104039cd-animated-gif-6.gif"
+                  alt=""
+              /></label>
+              <ul class="music__player">
+                <li>
+                  <iframe
+                    style="border-radius: 0"
+                    src="https://open.spotify.com/embed/playlist/3uwNz9MkuJV4NuOSJZ1ney?utm_source=generator&theme=0"
+                    width="100%"
+                    height="152"
+                    frameborder="0"
+                    allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                  ></iframe>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <a class="logo__text" href="/">DISCMAN</a>
+        </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item1"><a href="/">HOME</a></li>
+            <li class="nav__item2"><a href="/gallery/">GALLERY</a></li>
+            <li class="nav__item3"><a href="/order/">ORDER</a></li>
+            <li class="nav__item4"><a href="/contact/">CONTACT</a></li>
+          </ul>
+        </div>
+        <a
+          href="javascript:void(0);"
+          class="nav__hamburger"
+          onclick="activateHamburger()"
+        >
+          <img src="/Assets/burger-bar.png" alt="" />
+        </a>
+      </nav>
+
+      <main>
+        <p>Gallery</p>
+      </main>
+    </div>
+  </body>
+  <script src="/scripts.js"></script>
+</html>
