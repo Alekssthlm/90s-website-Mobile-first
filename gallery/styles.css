@@ -1,41 +1,6 @@
 @import '/Styles/CSS-Reset.css';
-
-/* GLOBAL STYLES */
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-h1 {
-  font-family: "Share Tech", sans-serif;
-}
-
-p {
-  font-family: "Montserrat", sans-serif;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-/* GLOBAL LAYOUT */
+@import '/Styles/Global-Layout.css';
+@import '/Styles/Global-Styles.css';
 
 /* COMPONENTS */
 

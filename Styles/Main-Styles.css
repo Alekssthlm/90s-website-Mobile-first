@@ -1,58 +1,7 @@
 @import 'CSS-Reset.css';
+@import 'Global-Styles.css';
+@import 'Global-Layout.css';
 
-:root {
-  --color-primary: #fff5e4;
-  --color-secondary: #77037B;
-  --accent-primary: #009FBD;
-  --accent-secondary: #210062;
-}
-
-/* GLOBAL STYLES */
-
-body {
-  margin: 6rem 0 0 0;
-  background-color: var(--accent-secondary);
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-h1 {
-  font-family: "Share Tech", sans-serif;
-}
-
-p {
-  font-family: "Montserrat", sans-serif;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-/* GLOBAL LAYOUT */
-
-.wrap {
-  display: grid;
-  grid-template-columns: 1;
-}
 
 /* COMPONENTS */
 

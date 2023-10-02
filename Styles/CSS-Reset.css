@@ -8,6 +8,11 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  margin: 6rem 0 0 0;
+  background-color: var(--accent-secondary);
+}
+
 img {
   display: block;
   max-width: 100%;
