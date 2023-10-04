@@ -1,4 +1,105 @@
-.wrap {
+.wrap__body {
   display: grid;
   grid-template-columns: 1;
+}
+
+.wrapper {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary);
+  font-size: 1.5rem;
+  height: 6rem;
+  font-family: "Share Tech", sans-serif;
+  padding: 1rem 0;
+}
+
+.nav__wrap{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 80rem;
+}
+
+.nav__container {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* nav left part */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo__text {
+  font-weight: 900;
+}
+
+.logo__image {
+  width: 5rem;
+  position: relative;
+}
+
+input#activate-player {
+  display: none;
+}
+
+.music__player {
+  position: absolute;
+  width: 100vw;
+  top: 5.5rem;
+  left: -1rem;
+  list-style: none;
+  visibility: hidden;
+}
+
+#activate-player:checked ~ .music__player {
+  visibility: visible;
+}
+
+/* nav right part */
+
+#nav-menu {
+  display: none;
+}
+
+.nav__hamburger img {
+  width: 3rem;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: absolute;
+  top: 6rem;
+  width: 100%;
+  right: 0;
+  background-color: var(--color-primary);
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+.nav__list a:hover {
+  text-decoration: underline;
+}
+
+.nav__item1, .nav__item2, .nav__item3  {
+  border-bottom: 1px solid rgb(161, 161, 161);
+  padding-bottom: 2rem;
 }

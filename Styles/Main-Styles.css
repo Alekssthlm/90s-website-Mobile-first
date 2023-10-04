@@ -4,86 +4,6 @@
 
 
 /* COMPONENTS */
-
-nav {
-  display: flex;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--color-primary);
-  font-size: 1.5rem;
-  height: 6rem;
-  font-family: "Share Tech", sans-serif;
-  padding: 1rem 1rem 1rem 1rem;
-}
-
-/* nav left part */
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.logo__image {
-  width: 5rem;
-  position: relative;
-}
-
-input#activate-player {
-  display: none;
-}
-
-.music__player {
-  position: absolute;
-  width: 100vw;
-  top: 5.5rem;
-  left: -1rem;
-  list-style: none;
-  visibility: hidden;
-}
-
-#activate-player:checked ~ .music__player {
-  visibility: visible;
-}
-
-/* nav right part */
-
-#nav-menu {
-  display: none;
-}
-
-.nav__hamburger img {
-  width: 3rem;
-  position: relative;
-}
-
-.nav__list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  position: absolute;
-  top: 6rem;
-  width: 100vw;
-  right: 0;
-  background-color: var(--color-primary);
-  padding: 2rem 1rem 2rem 1rem;
-}
-
-.nav__list a:hover {
-  text-decoration: underline;
-}
-
-.nav__item1, .nav__item2, .nav__item3  {
-  border-bottom: 1px solid rgb(161, 161, 161);
-  padding-bottom: 2rem;
-}
-
 /* hero */
 
 .hero {
@@ -93,15 +13,19 @@ input#activate-player {
   justify-content: center;
   text-align: center;
   position: relative;
-  height: 90vh;
-  background-color: var(--accent-primary);
-  margin-bottom: 1rem;
+  background-color: var(--color-primary);
+  width: 90%;
+  height: 30rem;
+  box-shadow: 7px 7px var(--accent-secondary);
+  margin: 0 auto 3rem;
 }
 
 .hero__image {
   position: absolute;
   height: 100%;
+  width: auto;
   flex-shrink: 0;
+  transition: all 1s;
 }
 
 .hero__wrap {
@@ -113,21 +37,28 @@ input#activate-player {
 .hero__cta h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: black;
-  background-color: var(--color-primary);
+  color: white;
+  background-color: #210062d4;
   padding: 1rem;
-  box-shadow: 5px 5px;
-
+  box-shadow: 5px 5px black;
+  margin-bottom: 2.5rem;
 }
 
 .hero__cta a {
     color: white;
-    background-color: var(--accent-secondary);
+    background-color: var(--color-secondary);
     padding: 0.5rem 2rem;
     border-style: none;
     border-radius: 5px;
     font-family: "Share Tech", sans-serif;
     font-size: 1.5rem;
+    transition: all 1s;
+}
+
+.hero__cta a:hover {
+  padding: 0.5rem 2.5rem;
+  transition: all 0.5s;
+  background-color: #2f008d;
 }
 
 /* main */
@@ -141,19 +72,36 @@ input#activate-player {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 3rem;
-  padding: 5rem 2rem;
-  box-shadow: 6px 6px var(--accent-primary);
+  padding: 4rem 2rem;
 }
 
 .introduction {
   background-color: var(--color-primary);
+  box-shadow: 7px 7px yellow;
+}
+
+.main__h1 {
+  color: white;
+  box-shadow: 5px 5px black;
+  padding: 0.5rem 0.5rem;
+  font-size: 2rem; 
+  margin-bottom: 1rem;
 }
 
 .introduction h1 {
   background-color: var(--color-secondary);
-  color: white;
-  box-shadow: 5px 5px black;
-  padding: 0.5rem 0.5rem; 
 }
+
+.feature1 {
+  background-color: yellow;
+  box-shadow: 7px 7px var(--accent-secondary);
+}
+
+.feature1 h1{
+  background-color: var(--color-secondary);
+}
+
+
+
 
 

@@ -6,11 +6,12 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
 }
 
 body {
-  margin: 6rem 0 0 0;
-  background-color: var(--accent-secondary);
+  margin: 7rem 0 0 0;
+  background-color: var(--accent-primary);
 }
 
 img {
