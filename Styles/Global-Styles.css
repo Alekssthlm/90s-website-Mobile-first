@@ -19,7 +19,7 @@ h1 {
   font-family: "Share Tech", sans-serif;
 }
 
-p {
+p, label, textarea {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 1.2rem

@@ -5,81 +5,91 @@
 
 /* COMPONENTS */
 
-nav {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
+@keyframes appear {
+  0% {opacity: 0%;}
+  100% {opacity: 100%;}
+}
+
+input, textarea{
+  display: block;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  border-bottom: 1px solid black;
+  border-top: none;
+  border-left: none;
+  padding: 0.5rem;
+}
+
+label{
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.contact__wrapper {
+  margin: 0 auto;
+  width: 90%;
+  margin-bottom: 3rem;
+  padding: 2rem 1rem;
+  background-color: var(--color-primary);
+  
+}
+
+.contact__wrapper form{
+  border: 1px dotted rgba(170, 170, 170, 0.603);
+  padding: 1rem;
+}
+
+.title{
+  text-align: center;
+  transition: all 1s;
+  animation-name: appear;
+  animation-duration: 1s;
+}
+
+.main__h1 {
+  color: white;
+  box-shadow: 5px 5px black;
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 2rem;
+  background-color: var(--color-secondary);
+  animation-name: appear;
+  animation-duration: 1s;
+}
+
+.main__p{
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.fullwidth{
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff5e4;
-  font-size: 1.5rem;
-  height: 6rem;
+}
+
+.terms{
+  margin-bottom: 2rem;
+}
+
+.terms__child {
+  display: inline;
+}
+
+button{
+  display: block;
+  margin: 0 auto;
+  color: white;
+  background-color: var(--color-secondary);
+  padding: 0.5rem 2rem;
+  border-style: none;
+  border-radius: 5px;
   font-family: "Share Tech", sans-serif;
-  padding: 1rem 1rem 1rem 1rem;
+  font-size: 1.5rem;
 }
 
-/* nav left part */
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+button:hover {
+  padding: 0.5rem 2.5rem;
+  transition: all 0.5s;
+  background-color: #9c02a1;
 }
 
-.logo__image {
-  width: 5rem;
-  position: relative;
-}
 
-input#activate-player {
-  display: none;
-}
-
-.music__player {
-  position: absolute;
-  width: 100vw;
-  top: 5.5rem;
-  left: -1rem;
-  list-style: none;
-  visibility: hidden;
-}
-
-#activate-player:checked ~ .music__player {
-  visibility: visible;
-}
-
-/* nav right part */
-
-#nav-menu {
-  display: none;
-}
-
-.nav__hamburger img {
-  width: 3rem;
-  position: relative;
-}
-
-.nav__list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  position: absolute;
-  top: 6rem;
-  width: 100vw;
-  right: 0;
-  background-color: #fff5e4;
-  padding: 2rem 1rem 2rem 1rem;
-}
-
-.nav__list a:hover {
-  text-decoration: underline;
-}
-
-.nav__item1, .nav__item2, .nav__item3  {
-  border-bottom: 1px solid rgb(161, 161, 161);
-  padding-bottom: 2rem;
-}
 
