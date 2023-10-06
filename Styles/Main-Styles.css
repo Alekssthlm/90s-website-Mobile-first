@@ -16,7 +16,7 @@
   background-color: transparent;
   width: 90%;
   margin: 0 auto 3rem;
-  background-color: #77037b6b;
+  background-color: var(--accent-primary);
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   padding: 0 0 2rem 0;
@@ -58,7 +58,7 @@
     border-style: none;
     border-radius: 5px;
     font-family: "Share Tech", sans-serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
     animation-name: appear;
     animation-duration: 2s;
 }

@@ -11,13 +11,10 @@ html {
 
 body {
   margin: 6rem 0 0 0;
-  background-color: var(--accent-primary);
-  background-image: url('https://media.giphy.com/media/xUOwGcu6wd0cXBj5n2/giphy.gif');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-color: var(--accent-secondary);
+
 }
+
 
 img {
   display: block;
