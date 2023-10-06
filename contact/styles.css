@@ -25,13 +25,16 @@ label{
   margin-bottom: 0.2rem;
 }
 
+
 .contact__wrapper {
-  margin: 0 auto;
+  margin: 1rem auto 0;
   width: 90%;
   margin-bottom: 3rem;
   padding: 2rem 1rem;
   background-color: var(--color-primary);
-  
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
 }
 
 .contact__wrapper form{
@@ -41,7 +44,7 @@ label{
 
 .title{
   text-align: center;
-  transition: all 1s;
+  transition: all 1s; 
   animation-name: appear;
   animation-duration: 1s;
 }
@@ -55,6 +58,12 @@ label{
   animation-name: appear;
   animation-duration: 1s;
 }
+@media (min-width: 35rem) {
+  .main__h1{
+    display: inline-block;
+    padding: 0.5rem 3rem;
+  }
+}
 
 .main__p{
   margin-bottom: 2rem;
@@ -63,6 +72,13 @@ label{
 
 .fullwidth{
   width: 100%;
+}
+
+#file{
+  font-size: 0.8rem;
+  background-color: white;
+  border: none;
+  margin-bottom: 2rem;
 }
 
 .terms{

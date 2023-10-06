@@ -1,15 +1,11 @@
 .wrap__body {
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: 1fr;
 }
 
-.wrapper {
+.wrapper{
   max-width: 80rem;
   margin: 0 auto;
-}
-
-header{
-  z-index: 100;
 }
 
 nav {
@@ -20,7 +16,7 @@ nav {
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-primary);
+  background-color: black;
   font-size: 1.5rem;
   height: 6rem;
   font-family: "Share Tech", sans-serif;
@@ -52,6 +48,7 @@ nav {
 
 .logo__text {
   font-weight: 900;
+  color: white;
 }
 
 .logo__image {
@@ -96,6 +93,7 @@ input#activate-player {
   right: 0;
   background-color: var(--color-primary);
   padding: 2rem 1rem 2rem 1rem;
+  border-bottom-left-radius: 25px;
 }
 
 .nav__list a:hover {

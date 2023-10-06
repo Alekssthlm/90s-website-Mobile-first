@@ -1,7 +1,9 @@
 :root {
   --color-primary: #fff5e4;
+  --color-primary-transparent: #fff5e4e3;
   --color-secondary: #77037B;
   --accent-primary: #009FBD;
+  --accent-primary-transparent: #50d4eee3;
   --accent-secondary: #210062;
 }
 
@@ -20,9 +22,9 @@ h1 {
 }
 
 p, label, textarea {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Share Tech", sans-serif;
   font-weight: bold;
-  font-size: 1.2rem
+  font-size: 1.4rem
 }
 
 ul {

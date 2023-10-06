@@ -13,17 +13,20 @@
   justify-content: flex-start;
   text-align: center;
   position: relative;
-  background-color: var(--color-primary);
+  background-color: transparent;
   width: 90%;
-  box-shadow: 7px 7px var(--accent-secondary);
   margin: 0 auto 3rem;
-  padding-top: 1rem;
+  background-color: #77037b6b;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 0 0 2rem 0;
 }
 
 .hero img {
-  height: 25rem;
+  height: 20rem;
   animation-name: appear;
-  animation-duration: 2s;
+  animation-duration: 3s;
+
 }
 
 @keyframes appear {
@@ -37,32 +40,32 @@
 }
 
 .hero__cta h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
   color: white;
-  background-color: #210062;
   padding: 1rem;
-  box-shadow: 5px 5px black;
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
   animation-name: appear;
   animation-duration: 1s;
 }
 
+.h1__discman {
+  font-size: 4rem;
+}
+
 .hero__cta a {
     color: white;
-    background-color: var(--color-secondary);
+    background-color: var(--accent-secondary);
     padding: 0.5rem 2rem;
     border-style: none;
     border-radius: 5px;
     font-family: "Share Tech", sans-serif;
-    font-size: 1.5rem;
-    transition: all 1s;
+    font-size: 1rem;
+    animation-name: appear;
+    animation-duration: 2s;
 }
 
 .hero__cta a:hover {
   padding: 0.5rem 2.5rem;
   transition: all 0.5s;
-  background-color: #2f008d;
 }
 
 /* main */
@@ -80,8 +83,9 @@
 }
 
 .introduction {
-  background-color: var(--color-primary);
-  box-shadow: 7px 7px yellow;
+  background-color: var(--color-primary-transparent);
+  box-shadow: 7px 7px var(--accent-primary);
+  border-bottom-left-radius: 25px;
 }
 
 .main__h1 {
@@ -95,8 +99,9 @@
 
 
 .feature1 {
-  background-color: yellow;
-  box-shadow: 7px 7px var(--accent-secondary);
+  background-color: var(--accent-primary-transparent);
+  box-shadow: 7px 7px var(--color-primary);
+  border-bottom-left-radius: 25px;
 }
 
 .feature1 h1{
