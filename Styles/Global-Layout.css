@@ -3,6 +3,15 @@
   grid-template-columns: 1fr;
 }
 
+@media (min-width: 60rem) {
+  .wrap__body{
+    grid-template-columns: 300px 3fr;
+    height: 100vh;
+    max-width: 80rem; 
+    margin: 0 auto;
+  }
+}
+
 .wrapper{
   max-width: 80rem;
   margin: 0 auto;
@@ -18,11 +27,11 @@ nav {
   align-items: center;
   background-color: black;
   font-size: 1.5rem;
-  height: 6rem;
+  height: 4rem;
   font-family: "Share Tech", sans-serif;
-  padding: 1rem 0;
   z-index: 10;
 }
+
 
 .nav__wrap{
   display: flex;
@@ -38,6 +47,7 @@ nav {
   align-items: center;
 }
 
+
 /* nav left part */
 
 .logo {
@@ -52,7 +62,7 @@ nav {
 }
 
 .logo__image {
-  width: 5rem;
+  width: 3rem;
 }
 
 input#activate-player {
@@ -62,7 +72,7 @@ input#activate-player {
 .music__player {
   position: absolute;
   width: 100vw;
-  top: 6rem;
+  top: 4rem;
   left: 0;
   list-style: none;
   visibility: hidden;
@@ -79,7 +89,7 @@ input#activate-player {
 }
 
 .nav__hamburger img {
-  width: 3rem;
+  width: 2rem;
 }
 
 .nav__list {
@@ -89,7 +99,7 @@ input#activate-player {
   gap: 2rem;
   position: absolute;
   width: 100%;
-  top: 6rem;
+  top: 3.9rem;
   right: 0;
   background-color: var(--color-primary);
   padding: 2rem 1rem 2rem 1rem;
@@ -103,4 +113,94 @@ input#activate-player {
 .nav__item1, .nav__item2, .nav__item3  {
   border-bottom: 1px solid rgb(161, 161, 161);
   padding-bottom: 2rem;
+}
+
+footer{
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 35rem) {
+  .nav__hamburger{
+    display: none;
+  }
+
+  .nav__container {
+    width: 95%;
+  }
+
+  #nav-menu{
+    display: flex;
+    padding: 0;
+  }
+
+  .nav__list{
+    flex-direction: row;
+    position: inherit;
+    align-items: center;
+    background-color: transparent;
+    gap: 0.5rem;
+    justify-content: flex-end;
+    font-size: 1rem;
+  }
+
+  .nav__list a {
+    color: white;
+  }
+
+  .nav__item1, .nav__item2, .nav__item3  {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+}
+
+@media (min-width: 60rem) {
+
+  header{
+    overflow:hidden;
+  }
+
+  nav{
+    position: relative;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .nav__container{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 0 0 2rem;
+  }
+
+  .nav__list{
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .nav__list a{
+    font-size: 1.5rem;
+  }
+
+  .logo{
+    padding: 0 0 0 0.6rem;
+  }
+
+  .logo__text{
+    font-size: 2rem;
+  }
+
+  .music__player{
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80rem;
+  }
+
+  main{
+    overflow: scroll;
+  }
+
 }

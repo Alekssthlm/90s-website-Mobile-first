@@ -79,6 +79,7 @@ label{
   background-color: white;
   border: none;
   margin-bottom: 2rem;
+  max-width: 90%;
 }
 
 .terms{

@@ -4,12 +4,16 @@
 
 /* COMPONENTS */
 
+main{
+  background-color: var(--accent-primary);
+}
+
 .gallery{
   display: grid;
   justify-content: center;
   gap: 2rem;
   width: 90%;
-  margin: 1rem auto 3rem;
+  margin: 1rem auto 2rem;
   grid-template-columns: 1fr;
 }
 
@@ -23,6 +27,7 @@
   background-size: 50%;
   width: 600px;
   height: auto;
+  border: 5px solid black;
 }
 
 .gallery__description{
@@ -30,8 +35,6 @@
   background-color: black;
   text-align: center;
   padding: 1rem;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
 }
 
 @media (min-width: 35rem) {
