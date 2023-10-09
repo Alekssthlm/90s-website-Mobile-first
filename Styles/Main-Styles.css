@@ -42,6 +42,14 @@
   }
 }
 
+
+
+@media (min-width: 75rem) {
+  .main-hero__image-container{
+    padding-top: 5rem;
+  }
+}
+
 .main-hero__image {
   height: 25rem;
   animation-name: appear;
