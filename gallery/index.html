@@ -16,93 +16,100 @@
       href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Discman - Gallery</title>
   </head>
 
   <body>
     <div class="wrap__body">
       <header>
-        <nav>
-          <div class="nav__wrap">
-            <div class="nav__container">
-              <div class="logo">
-                <!-- Secret music player -->
-                <ul>
-                  <li class="logo__image">
-                    <input type="checkbox" id="activate-player" />
-                    <label for="activate-player"
-                      ><img
-                        src="https://bestanimations.com/media/discs/1070104039cd-animated-gif-6.gif"
-                        alt=""
-                    /></label>
-                    <ul class="music__player">
-                      <li>
-                        <iframe
-                          style="border-radius: 0"
-                          src="https://open.spotify.com/embed/playlist/3uwNz9MkuJV4NuOSJZ1ney?utm_source=generator&theme=0"
-                          width="100%"
-                          height="152"
-                          frameborder="0"
-                          allowfullscreen=""
-                          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                          loading="lazy"
-                        ></iframe>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-                <a class="logo__text" href="/">DISCMAN</a>
-              </div>
-
-              <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                  <li class="nav__item1"><a href="/">HOME</a></li>
-                  <li class="nav__item2"><a href="/gallery/">GALLERY</a></li>
-                  <li class="nav__item3"><a href="/order/">ORDER</a></li>
-                  <li class="nav__item4"><a href="/contact/">CONTACT</a></li>
-                </ul>
-              </div>
-              <a
-                href="javascript:void(0);"
-                class="nav__hamburger"
-                onclick="activateHamburger()"
-              >
-                <img src="/Assets/burger-bar.png" alt="" />
-              </a>
+        <nav class="navbar">
+          <div class="navbar__container">
+            <div class="logo">
+              <!-- Secret music player -->
+              <ul>
+                <li class="logo__image">
+                  <input type="checkbox" id="activate-player" />
+                  <label for="activate-player"
+                    ><img
+                      src="https://bestanimations.com/media/discs/1070104039cd-animated-gif-6.gif"
+                      alt=""
+                  /></label>
+                  <ul class="music-player">
+                    <li>
+                      <iframe
+                        style="border-radius: 0"
+                        src="https://open.spotify.com/embed/playlist/3uwNz9MkuJV4NuOSJZ1ney?utm_source=generator&theme=0"
+                        width="100%"
+                        height="152"
+                        frameborder="0"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                      ></iframe>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <a class="logo__text" href="/">DISCMAN</a>
             </div>
+
+            <div id="nav-menu">
+              <ul class="nav__list" >
+                <li class="nav__item1"><a href="/">HOME</a></li>
+                <li class="nav__item2"><a href="/gallery/">GALLERY</a></li>
+                <li class="nav__item3"><a href="/order/">ORDER</a></li>
+                <li class="nav__item4"><a href="/contact/">CONTACT</a></li>
+              </ul>
+            </div>
+            <a
+              href="javascript:void(0);"
+              class="nav__hamburger"
+              onclick="activateHamburger()"
+            >
+              <img src="/Assets/burger-bar-white.png" alt="" />
+            </a>
           </div>
-        </nav>
+      </nav>
       </header>
 
-      <main class="wrapper">
-        <div class="gallery">
-          <div class="gallery__item">
-            <img src="/Assets/Gallery/Discman_D121.jpg" alt="Image of a Discman d121 released in 1992" class="gallery__img" width="400" height="400">
-            <p class="gallery__description">Discman D121 1992</p>
+      <main class="main-gallery">
+        <div class="main-gallery__wrapper">
+          <div class="main-gallery__item">
+            <img src="/Assets/Gallery/Discman_D121.jpg" alt="Image of a Discman d121 released in 1992" class="main-gallery__img" width="400" height="400">
+            <p class="main-gallery__description">Discman D121 1992</p>
           </div>
-          <div class="gallery__item">
-            <img src="/Assets/Gallery/Discman d145 1995.jpg" alt="Image of a Discman d145 released in 1995" class="gallery__img" width="400" height="400">
-            <p class="gallery__description">Discman D145 1995</p>
+          <div class="main-gallery__item">
+            <img src="/Assets/Gallery/Discman d145 1995.jpg" alt="Image of a Discman d145 released in 1995" class="main-gallery__img" width="400" height="400">
+            <p class="main-gallery__description">Discman D145 1995</p>
           </div>
-          <div class="gallery__item">
-            <img src="/Assets/Gallery/discman-headphones.jpg" alt="Image of a Discman with lid open and a cd inside" class="gallery__img" width="400" height="400">
-            <p class="gallery__description">Open Discman</p>
+          <div class="main-gallery__item">
+            <img src="/Assets/Gallery/discman-headphones.jpg" alt="Image of a Discman with lid open and a cd inside" class="main-gallery__img" width="400" height="400">
+            <p class="main-gallery__description">Open Discman</p>
           </div>
-          <div class="gallery__item">
-            <img src="/Assets/Gallery/discman-open.jpg" alt="Image of a different Discman with lid open" class="gallery__img" width="400" height="400">
-            <p class="gallery__description">Discman controls</p>
+          <div class="main-gallery__item">
+            <img src="/Assets/Gallery/discman-open.jpg" alt="Image of a different Discman with lid open" class="main-gallery__img" width="400" height="400">
+            <p class="main-gallery__description">Discman controls</p>
           </div>
-          <div class="gallery__item">
-            <img src="/Assets/Gallery/Sony_CD_Walkman_D-E330.jpg" alt="Image of a Walkman D-E330" class="gallery__img" width="400" height="400">
-            <p class="gallery__description">Walkman D-E330</p>
+          <div class="main-gallery__item">
+            <img src="/Assets/Gallery/Sony_CD_Walkman_D-E330.jpg" alt="Image of a Walkman D-E330" class="main-gallery__img" width="400" height="400">
+            <p class="main-gallery__description">Walkman D-E330</p>
           </div>
-          <div class="gallery__item">
-            <img src="/Assets/Gallery/disc-collection.jpg" alt="Image of a disc collection" class="gallery__img" width="400" height="400">
-            <p class="gallery__description">Disc collection</p>
+          <div class="main-gallery__item">
+            <img src="/Assets/Gallery/disc-collection.jpg" alt="Image of a disc collection" class="main-gallery__img" width="400" height="400">
+            <p class="main-gallery__description">Disc collection</p>
           </div>
         </div>
       </main>
     </div>
   </body>
+  <footer class="footer">
+    <div>
+      <a href="https://www.linkedin.com/in/alexander-heras/" class="fa fa-linkedin"></a>
+    </div>
+    <div>
+      <small>© Copyright - Alexander Heras (Hyper Island School Assessment)</small>
+    </div>
+  </footer>
   <script src="/scripts.js"></script>
 </html>

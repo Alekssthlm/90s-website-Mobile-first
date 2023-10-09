@@ -4,20 +4,23 @@
 }
 
 @media (min-width: 60rem) {
+  main{
+    overflow: auto;
+  }
+}
+
+@media (min-width: 60rem) {
   .wrap__body{
-    grid-template-columns: 300px 3fr;
+    grid-template-columns: 19rem 3fr;
     height: 100vh;
     max-width: 80rem; 
     margin: 0 auto;
   }
 }
 
-.wrapper{
-  max-width: 80rem;
-  margin: 0 auto;
-}
+/* HEADER */
 
-nav {
+.navbar {
   display: flex;
   position: fixed;
   top: 0;
@@ -32,23 +35,31 @@ nav {
   z-index: 10;
 }
 
-
-.nav__wrap{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  max-width: 80rem;
+@media (min-width: 60rem) {
+  .navbar{
+    position: relative;
+    flex-direction: column;
+    height: 100vh;
+  }
 }
 
-.nav__container {
+.navbar__container {
   display: flex;
   width: 90%;
   justify-content: space-between;
   align-items: center;
 }
 
+@media (min-width: 60rem) {
+  .navbar__container{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 0 0 2rem;
+  }
+}
 
-/* nav left part */
+
+/* NAVBAR LOGO SIDE */
 
 .logo {
   display: flex;
@@ -56,20 +67,34 @@ nav {
   gap: 1rem;
 }
 
-.logo__text {
-  font-weight: 900;
-  color: white;
+@media (min-width: 60rem) {
+  .logo{
+    padding: 0 0 0 0.6rem;
+  }
 }
 
 .logo__image {
   width: 3rem;
 }
 
+.logo__text {
+  font-weight: 900;
+  color: white;
+}
+
+@media (min-width: 60rem) {
+  .logo__text{
+    font-size: 2rem;
+  }
+}
+
+/* HIDDEN MUSIC PLAYER (BASED ON CHECKBOX) */
+
 input#activate-player {
   display: none;
 }
 
-.music__player {
+.music-player {
   position: absolute;
   width: 100vw;
   top: 4rem;
@@ -78,11 +103,21 @@ input#activate-player {
   visibility: hidden;
 }
 
-#activate-player:checked ~ .music__player {
+@media (min-width: 60rem) {
+  .music-player{
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80rem;
+  }
+}
+
+#activate-player:checked ~ .music-player {
   visibility: visible;
 }
 
-/* nav right part */
+/* NAVBAR MENU SIDE */
 
 #nav-menu{
   display: none;
@@ -115,18 +150,11 @@ input#activate-player {
   padding-bottom: 2rem;
 }
 
-footer{
-  max-width: 80rem;
-  margin: 0 auto;
-}
+
 
 @media (min-width: 35rem) {
   .nav__hamburger{
     display: none;
-  }
-
-  .nav__container {
-    width: 95%;
   }
 
   #nav-menu{
@@ -152,27 +180,9 @@ footer{
     border-bottom: none;
     padding-bottom: 0;
   }
-
 }
 
 @media (min-width: 60rem) {
-
-  header{
-    overflow:hidden;
-  }
-
-  nav{
-    position: relative;
-    flex-direction: column;
-    height: 100vh;
-  }
-
-  .nav__container{
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 0 0 2rem;
-  }
-
   .nav__list{
     flex-direction: column;
     gap: 2rem;
@@ -182,25 +192,4 @@ footer{
   .nav__list a{
     font-size: 1.5rem;
   }
-
-  .logo{
-    padding: 0 0 0 0.6rem;
-  }
-
-  .logo__text{
-    font-size: 2rem;
-  }
-
-  .music__player{
-    position: fixed;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 80rem;
-  }
-
-  main{
-    overflow: scroll;
-  }
-
 }

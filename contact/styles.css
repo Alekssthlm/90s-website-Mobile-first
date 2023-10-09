@@ -2,13 +2,7 @@
 @import '/Styles/Global-Layout.css';
 @import '/Styles/Global-Styles.css';
 
-
-/* COMPONENTS */
-
-@keyframes appear {
-  0% {opacity: 0%;}
-  100% {opacity: 100%;}
-}
+/* LOCAL RESET */
 
 input, textarea{
   display: block;
@@ -25,21 +19,38 @@ label{
   margin-bottom: 0.2rem;
 }
 
+/* COMPONENTS */
 
-.contact__wrapper {
-  margin: 1rem auto 0;
-  width: 90%;
-  margin-bottom: 3rem;
-  padding: 2rem 1rem;
+.main-contact{
   background-color: var(--color-primary);
-  border-bottom-left-radius: 25px;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
 }
 
-.contact__wrapper form{
+@media (min-width: 35rem) {
+  .main-contact{
+    padding-top: 2rem;
+  }
+}
+
+.main-contact__wrapper {
+  margin: 0 auto 0;
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 35rem) {
+  .main-contact__wrapper {
+    width: 80%;
+  }
+}
+
+.main-contact__form{
   border: 1px dotted rgba(170, 170, 170, 0.603);
   padding: 1rem;
+}
+
+@keyframes appear {
+  0% {opacity: 0%;}
+  100% {opacity: 100%;}
 }
 
 .title{
@@ -49,7 +60,7 @@ label{
   animation-duration: 1s;
 }
 
-.main__h1 {
+.main-contact__title {
   color: white;
   box-shadow: 5px 5px black;
   padding: 0.5rem 0.5rem;
@@ -59,22 +70,22 @@ label{
   animation-duration: 1s;
 }
 @media (min-width: 35rem) {
-  .main__h1{
+  .main-contact__title{
     display: inline-block;
     padding: 0.5rem 3rem;
   }
 }
 
-.main__p{
+.main-contact__description{
   margin-bottom: 2rem;
   padding: 0 1rem;
 }
 
-.fullwidth{
+.input-fullwidth{
   width: 100%;
 }
 
-#file{
+.file-upload{
   font-size: 0.8rem;
   background-color: white;
   border: none;
@@ -82,27 +93,27 @@ label{
   max-width: 90%;
 }
 
-.terms{
+.terms-section{
   margin-bottom: 2rem;
 }
 
-.terms__child {
+.terms-section__checkbox, .terms-section__label {
   display: inline;
 }
 
-button{
+.form-button{
   display: block;
   margin: 0 auto;
   color: white;
   background-color: var(--color-secondary);
   padding: 0.5rem 2rem;
   border-style: none;
-  border-radius: 5px;
+  border-radius: 25px;
   font-family: "Share Tech", sans-serif;
   font-size: 1.5rem;
 }
 
-button:hover {
+.form-button:hover {
   padding: 0.5rem 2.5rem;
   transition: all 0.5s;
   background-color: #9c02a1;

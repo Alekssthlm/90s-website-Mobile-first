@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Discman - Home</title>
     <!-- color palette https://colorhunt.co/palette/f9e2af009fbd21006277037b -->
   </head>
@@ -23,9 +24,8 @@
   <body>
     <div class="wrap__body">
       <header>
-        <nav>
-          <div class="nav__wrap">
-            <div class="nav__container">
+        <nav class="navbar" id="navbar">
+            <div class="navbar__container">
               <div class="logo">
                 <!-- Secret music player -->
                 <ul>
@@ -36,7 +36,7 @@
                         src="https://bestanimations.com/media/discs/1070104039cd-animated-gif-6.gif"
                         alt=""
                     /></label>
-                    <ul class="music__player">
+                    <ul class="music-player">
                       <li>
                         <iframe
                           style="border-radius: 0"
@@ -71,28 +71,30 @@
                 <img src="Assets/burger-bar-white.png" alt="" />
               </a>
             </div>
-          </div>
         </nav>
       </header>
 
-      <main class="wrapper">
-        <div class="hero">
-          
-          <img
-          class="hero__image"
+      <main>
+        <div class="main-hero">
+          <!-- <img
+          class="main-hero__image"
           src="Assets/blue-discman-mobile.png"
           alt="Sketch of a sony discman"
-          />
-          <div class="hero__wrap">
-            <div class="hero__cta">
-              <h1>THE SONY <br><span class="h1__discman">DISCMAN</span></h1>
-              <a href="#introduction">DISCOVER</a>
+          /> -->
+          <picture class="main-hero__image-container">
+            <source srcset="Assets/blue-discman-full.png" media="(min-width: 75rem)">
+            <img class="main-hero__image" src="Assets/blue-discman-mobile.png" alt="Sketch of a sony discman">
+          </picture>
+          <div class="main-hero__cta">
+            <div class="main-hero__cta-wrap">
+              <h1 class="cta-title">THE SONY <br><span class="cta-discman">DISCMAN</span></h1>
+              <a href="#introduction" class="cta-button">DISCOVER</a>
             </div>
           </div>
         </div>
 
-        <div class="introduction section-container" id="introduction">
-          <h1 class="main__h1">Introducing the Ultimate '90s Nostalgia</h1>
+        <div class="main-introduction section-container" id="introduction">
+          <h1 class="section__h1">Introducing the Ultimate '90s Nostalgia</h1>
           <p class="section-p">
             Step back in time to the era when music was pure magic and the
             Discman reigned supreme! The Discman, or simply the "Discman
@@ -102,11 +104,10 @@
           </p>
         </div>
 
-        <div class="feature1 section-container">
+        <div class="main-feature1 section-container">
           <div>
-            <h1 class="main__h1">RELIVE THE MAGIC</h1>
+            <h1 class="section__h1">RELIVE THE MAGIC</h1>
           </div>
-
           <p class="section-p">
             Remember when music was a physical experience, and every CD was a
             treasure trove of melodies waiting to be explored? The Discman was
@@ -117,9 +118,12 @@
       </main>
     </div>
   </body>
-  <footer>
+  <footer class="footer">
     <div>
-      footer placeholder
+      <a href="https://www.linkedin.com/in/alexander-heras/" class="fa fa-linkedin"></a>
+    </div>
+    <div>
+      <small>© Copyright - Alexander Heras (Hyper Island School Assessment)</small>
     </div>
   </footer>
   <script src="scripts.js"></script>

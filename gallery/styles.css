@@ -4,11 +4,19 @@
 
 /* COMPONENTS */
 
-main{
+.main-gallery{
   background-color: var(--accent-primary);
+  display: flex;
+  align-items: flex-start;
 }
 
-.gallery{
+@media (min-width: 75rem) {
+  .main-gallery{
+    align-items: center;
+  }
+}
+
+.main-gallery__wrapper{ 
   display: grid;
   justify-content: center;
   gap: 2rem;
@@ -17,11 +25,24 @@ main{
   grid-template-columns: 1fr;
 }
 
-.gallery__item{
+@media (min-width: 35rem) {
+  .main-gallery__wrapper{
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem auto 2rem;
+  }
+}
+
+@media (min-width: 75rem) {
+  .main-gallery__wrapper{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.main-gallery__item{
   max-width: 600px;
 }
 
-.gallery__img{
+.main-gallery__img{
   padding: 1rem;
   background-image: url('/Assets/90s\ pattern.jpg');
   background-size: 50%;
@@ -30,21 +51,10 @@ main{
   border: 5px solid black;
 }
 
-.gallery__description{
+.main-gallery__description{
   color: white;
   background-color: black;
   text-align: center;
   padding: 1rem;
 }
 
-@media (min-width: 35rem) {
-  .gallery{
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 60rem) {
-  .gallery{
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}

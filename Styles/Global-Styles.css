@@ -27,6 +27,11 @@ p, label, textarea {
   font-size: 1.4rem
 }
 
+small{
+  font-family: "Share Tech", sans-serif;
+  font-weight: bold;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -40,4 +45,32 @@ a {
 a:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+.fa {
+  padding: 1rem;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  border-radius: 25px;
+}
+
+footer{
+  height: 8rem;
+  border: 0.2rem solid var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-primary);
+  max-width: 80rem;
+  margin: 0 auto;
 }
