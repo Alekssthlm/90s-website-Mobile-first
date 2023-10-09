@@ -42,12 +42,8 @@
   }
 }
 
-.main-hero__image-container{
-  padding-top: 2rem;
-}
-
 .main-hero__image {
-  height: 20rem;
+  height: 25rem;
   animation-name: appear;
   animation-duration: 3s;
 }
