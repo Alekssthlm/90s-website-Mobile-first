@@ -16,11 +16,14 @@
       href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Discman - Order</title>
   </head>
 
-  <body> 
+  <body>
     <div class="wrap__body">
       <header>
         <nav class="navbar">
@@ -55,7 +58,7 @@
             </div>
 
             <div id="nav-menu">
-              <ul class="nav__list" >
+              <ul class="nav__list">
                 <li class="nav__item1"><a href="/">HOME</a></li>
                 <li class="nav__item2"><a href="/gallery/">GALLERY</a></li>
                 <li class="nav__item3"><a href="/order/">ORDER</a></li>
@@ -70,20 +73,203 @@
               <img src="/Assets/burger-bar-white.png" alt="" />
             </a>
           </div>
-      </nav>
+        </nav>
       </header>
 
-      <main class="wrapper">
-        <p>Order</p>
+      <main class="product-main">
+        <section class="product">
+          <div class="product__images">
+            <ul class="carousel">
+              <li class="carousel__item">
+                <img
+                  class="carousel__image"
+                  src="/Assets/Product page/discman-red.jpg"
+                  alt=""
+                  id="red"
+                />
+              </li>
+              <li class="carousel__item">
+                <img
+                  class="carousel__image"
+                  src="/Assets/Product page/discman-blue.jpg"
+                  alt=""
+                  id="blue"
+                />
+              </li>
+              <li class="carousel__item">
+                <img
+                  class="carousel__image"
+                  src="/Assets/Product page/discman-black.jpg"
+                  alt=""
+                  id="black"
+                />
+              </li>
+              <li class="carousel__item">
+                <img
+                  class="carousel__image"
+                  src="/Assets/Product page/discman-white.jpg"
+                  alt=""
+                  id="white"
+                />
+              </li>
+            </ul>
+            <div class="product__images-nav">
+              <a href="#red" class="image-selector-dot"></a>
+              <a href="#blue" class="image-selector-dot"></a>
+              <a href="#black" class="image-selector-dot"></a>
+              <a href="#white" class="image-selector-dot"></a>
+            </div>
+          </div>
+          <div class="product__options">
+            <div class="product__title-wrap">
+              <h1 class="product__title-h1">SONY DISCMAN</h1>
+              <h3 class="current-price">
+                1499:- <span class="old-price">2099:-</span>
+              </h3>
+            </div>
+            <form class="product__form" action="">
+              <div class="color-section">
+                <label for="color">Color:</label>
+                <select id="color" name="color">
+                  <option value="Red">Red</option>
+                  <option value="Blue">Blue</option>
+                  <option value="Black">Black</option>
+                  <option value="White">White</option>
+                </select>
+              </div>
+              <div class="quantity-section">
+                <label for="quantity">Quantity:</label>
+                <input
+                  type="number"
+                  id="quantity"
+                  name="quantity"
+                  min="0"
+                  max="10"
+                  step="1"
+                  value="1"
+                />
+              </div>
+              <div class="bundle-section">
+                <p class="add-bundle">🎵 Add 90's hits CD bundle:</p>
+                <br />
+                <input type="radio" name="add-bundle" value="yes" id="yes" checked/>
+                <label for="yes">Yes, please!</label><br />
+                <input type="radio" name="add-bundle" value="no" id="no" />
+                <label for="no">No, thank you</label>
+              </div>
+              <button type="submit" class="button__buy-now">BUY NOW</button>
+            </form>
+            <p class="delivery-time">Delivery within 2 to 4 work days!</p>
+          </div>
+        </section>
+        <article class="promo-section">
+          <h1 class="promo__title">
+            Unleash Your Inner Nostalgia: Dive into the World of Discmans!
+          </h1>
+
+          <p class="promo__p">
+            Are you ready to embark on a journey through time? Look no further
+            than our curated collection of Discmans – the legendary portable CD
+            players that defined an era.
+          </p>
+
+          <h2>Rekindle the Magic of the '90s:</h2>
+          <p>
+            Remember when music was a physical experience, and every CD was a
+            treasure trove of melodies waiting to be explored? The Discman was
+            your passport to musical adventures on the go. Now, you can relive
+            those moments and introduce a new generation to the joy of CDs.
+          </p>
+
+          <h2>Why Choose Our Discmans:</h2>
+          <ul class="list-styled">
+            <li>
+              <strong>Authenticity:</strong> We offer genuine, vintage Discmans
+              meticulously restored to their former glory.
+            </li>
+            <li>
+              <strong>Superb Sound:</strong> Experience your favorite albums
+              with the high-quality audio these classics are renowned for.
+            </li>
+            <li>
+              <strong>Iconic Design:</strong> The unmistakable charm of the
+              Discman's sleek, compact design is back!
+            </li>
+            <li>
+              <strong>Collectible Items:</strong> Our Discmans are not just
+              music players; they're pieces of history, perfect for collectors
+              and enthusiasts alike.
+            </li>
+          </ul>
+
+          <h2>Technical Features that Amaze:</h2>
+          <ul class="list-styled">
+            <li>
+              <strong>Anti-Skip Protection:</strong> Enjoy uninterrupted music
+              even while on the move, thanks to anti-skip technology that
+              minimizes disruptions.
+            </li>
+            <li>
+              <strong>Extended Battery Life:</strong> Our Discmans are equipped
+              with long-lasting batteries to keep the music playing all day.
+            </li>
+            <li>
+              <strong>Digital Display:</strong> Stay informed about the track,
+              battery status, and more with the crisp and clear digital display.
+            </li>
+            <li>
+              <strong>Stereo Sound:</strong> Immerse yourself in a rich stereo
+              sound experience that makes your music come alive.
+            </li>
+            <li>
+              <strong>CD-R and CD-RW Compatible:</strong> Play your custom mix
+              CDs with ease, as our Discmans support CD-R and CD-RW formats.
+            </li>
+          </ul>
+
+          <h2>Explore Our Selection:</h2>
+          <p>
+            Ready to start your journey into the past? Browse our collection of
+            Discmans and choose the one that speaks to your heart. Whether
+            you're reliving your youth or introducing someone to the magic of
+            CDs, we have the perfect Discman for you.
+          </p>
+
+          <h2>Perfect Gift:</h2>
+          <p>
+            Looking for a unique gift for a music lover? A Discman is a
+            thoughtful and unforgettable present that will transport them to the
+            golden era of music.
+          </p>
+
+          <h2>Fast Shipping:</h2>
+          <p>
+            We ensure quick and secure shipping to bring the joy of Discmans to
+            your doorstep.
+          </p>
+
+          <h2>Join the Revival:</h2>
+          <p>
+            Experience music the way it was meant to be heard – on a Discman!
+            Dive into our world of Discmans and embark on a musical journey that
+            transcends time.
+          </p>
+        </article>
       </main>
     </div>
   </body>
   <footer class="footer">
     <div>
-      <a href="https://www.linkedin.com/in/alexander-heras/" class="fa fa-linkedin"></a>
+      <a
+        href="https://www.linkedin.com/in/alexander-heras/"
+        class="fa fa-linkedin"
+      ></a>
     </div>
     <div>
-      <small>© Copyright - Alexander Heras <br>(Hyper Island School Assessment)</small>
+      <small
+        >© Copyright - Alexander Heras <br />(Hyper Island School
+        Assessment)</small
+      >
     </div>
   </footer>
   <script src="/scripts.js"></script>
